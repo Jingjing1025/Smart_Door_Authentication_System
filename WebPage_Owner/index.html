@@ -1,0 +1,37 @@
+<html>
+<head>
+<title>Owner Access Form</title>
+<link rel="stylesheet" type="text/css" href="OwnerSite.css"></style>
+<script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
+<script  src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="apiGateway-js-sdk/apigClient.js"></script>
+<script type="text/javascript" src="apiGateway-js-sdk/lib/axios/dist/axios.standalone.js"></script>
+<script type="text/javascript" src="apiGateway-js-sdk/lib/CryptoJS/rollups/hmac-sha256.js"></script>
+<script type="text/javascript" src="apiGateway-js-sdk/lib/CryptoJS/rollups/sha256.js"></script>
+<script type="text/javascript" src="apiGateway-js-sdk/lib/CryptoJS/components/hmac.js"></script>
+<script type="text/javascript" src="apiGateway-js-sdk/lib/CryptoJS/components/enc-base64.js"></script>
+<script type="text/javascript" src="apiGateway-js-sdk/lib/url-template/url-template.js"></script>
+<script type="text/javascript" src="apiGateway-js-sdk/lib/apiGatewayCore/sigV4Client.js"></script>
+<script type="text/javascript" src="apiGateway-js-sdk/lib/apiGatewayCore/apiGatewayClient.js"></script>
+<script type="text/javascript" src="apiGateway-js-sdk/lib/apiGatewayCore/simpleHttpClient.js"></script>
+<script type="text/javascript" src="apiGateway-js-sdk/lib/apiGatewayCore/utils.js"></script>
+<script src="OwnerSite.js"></script>
+
+</head>
+<body>
+<div class="container">
+<div class="main">
+<!-- <form action="#" method="post" name="form_name" id="form_id" class="form_class" > -->
+<h2>Owner Access Form</h2>
+<label>Name :</label>
+<input type="text" name="name" id="name" placeholder="Name" />
+<label>FaceID :</label>
+<input type="text" name="FaceID" id="FaceID" placeholder="FaceID" />
+<label>Phone :</label>
+<input type="text" name="phone" id="phone" placeholder="Valid Phone Number" />
+<input type="button" name="submitAll" id="btn_name" value="Submit All" onclick= "submitAll()"/>
+</form>
+</div>
+</div>
+</body>
+</html>
